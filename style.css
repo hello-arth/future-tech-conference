@@ -5,12 +5,15 @@
 }
 
 :root {
+  /* Colors */
   --color-primary: #6c63ff;
   --color-black: #070707;
   --color-dark-700: #2c2c2e;
   --color-dark-300: #8a8784;
   --color-light: #e0e0e0;
   --color-white: #ffffff;
+
+  /* Border */
   --border-radius-sm: .5rem;
 
   /* Space */
@@ -29,30 +32,16 @@
   --fs-5: 1.25rem;
   --fs-6: 1rem;
 
-  /* Font-weight */
-  --fw-light: 300;
-  --fw-normal: 400;
-  --fw-semibold: 600;
-  --fw-bold: 700;
-
-  /* Font-style */
-  --fst-normal: normal;
-  --fst-italic: italic;
-
   /* Line-height */
   --lh-1: 1;
   --lh-sm: 1.25;
   --lh-base: 1.5;
   --lh-lg: 2;
 
-  /* Text-transform */
-  --text-uppercase: uppercase;
-  --text-lowercase: lowercase;
-  --text-capitalize: capitalize;
-
   font-family: Arial, Helvetica, sans-serif;
 }
 
+/* Estilizações globais */
 body {
   min-height: 100vh;
   display: grid;
@@ -63,6 +52,16 @@ body > section {
   text-align: center;
 }
 
+.btn {
+  background-color: var(--color-primary);
+  color: var(--color-white);
+  border-radius: var(--border-radius-sm);
+  text-decoration: none;
+  padding: .75rem var(--space-4);
+  border: none;
+  width: max-content;
+}
+
 h1, h2, p {
   line-height: var(--lh-base);
 }
@@ -71,6 +70,25 @@ h3 {
   font-size: var(--fs-6);
 }
 
+/* Estilizações compartilhadas */
+.btn, .speaker-card, .schedule-item {
+  cursor: pointer;
+  transition: .25s ease;
+}
+
+.btn:hover, .speaker-card:hover, .schedule-item:hover  {
+  transform: translatey(-.25rem) scale(1.01);
+}
+
+.speakers-grid, .schedule-grid {
+  display: grid;
+  grid-template-columns: minmax(21rem, 25rem);
+  gap: var(--space-4);
+  place-content: center;
+  margin-top: var(--space-4)
+}
+
+/* Hero section */
 .hero {
   background-image: linear-gradient(
     to bottom,
@@ -98,24 +116,8 @@ h3 {
   font-size: var(--fs-2);
 }
 
-.btn {
-  background-color: var(--color-primary);
-  color: var(--color-white);
-  border-radius: var(--border-radius-sm);
-  text-decoration: none;
-  padding: .75rem var(--space-4);
-  border: none;
-  width: max-content;
-}
 
-.speakers-grid, .schedule-grid {
-  display: grid;
-  grid-template-columns: minmax(21rem, 25rem);
-  gap: var(--space-4);
-  place-content: center;
-  margin-top: var(--space-4)
-}
-
+/* Speakers section */
 .speaker-card {
   background-color: var(--color-white);
   border-radius: var(--border-radius-sm);
@@ -129,6 +131,7 @@ h3 {
   border-radius: 50%;
 }
 
+/* Schedule section */
 .schedule-item {
   background-color: var(--color-white);
   border-radius: var(--border-radius-sm);
@@ -138,6 +141,7 @@ h3 {
   text-align: left;
 }
 
+/* Newsletter section */
 .newsletter-grid {
   display: grid;
   grid-template-columns: minmax(auto, 25rem);
@@ -163,6 +167,7 @@ h3 {
   color: var(--color-dark-700);
 }
 
+/* Newsletter form */
 .newsletter-form {
   display: grid;
   gap: var(--space-4);
@@ -187,6 +192,7 @@ h3 {
   border: .5px solid var(--color-dark-700);
 }
 
+/* Footer */
 .footer {
   display: grid;
   gap: var(--space-3);
@@ -195,7 +201,6 @@ h3 {
   font-size: .85rem;
   margin: var(--space-4) 0;
 }
-
 
 @media screen and (prefers-color-scheme: dark) {
   body {
@@ -217,6 +222,7 @@ h3 {
 
   .form-group input {
     border-color: var(--color-dark-300);
+    color: var(--color-white);
   }
 }
 
