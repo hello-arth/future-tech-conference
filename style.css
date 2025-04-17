@@ -41,7 +41,7 @@
   font-family: Arial, Helvetica, sans-serif;
 }
 
-/* Estilizações globais */
+/* Global styles */
 body {
   min-height: 100vh;
   display: grid;
@@ -70,7 +70,7 @@ h3 {
   font-size: var(--fs-6);
 }
 
-/* Estilizações compartilhadas */
+/* Shared styles */
 .btn, .speaker-card, .schedule-item {
   cursor: pointer;
   transition: .25s ease;
@@ -207,6 +207,7 @@ h3 {
 }
 
 @media screen and (min-width: 1024px) {
+  /* Global styles */
   body > section:not(.hero) {
     width: 100%;
     max-width: 120rem;
@@ -214,14 +215,26 @@ h3 {
     margin: 0 auto;
   }
 
-  .speakers-grid {
-    grid-template-columns: repeat(3, 1fr);
+  /* Shared styles */
+  .newsletter-image, .newsletter-text {
+    align-self: center; 
   }
-
+  
+  .newsletter-text h2,
+  .newsletter-text p {
+    text-align: left;
+    padding: var(--space-1) 0;
+  }
+  
   .schedule-grid, .newsletter-grid {
     grid-template-columns: repeat(2, 1fr);
   }
-
+  
+  /* Others */
+  .speakers-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  
   .newsletter-image {
     padding: 0 var(--space-5);
   }
@@ -229,17 +242,7 @@ h3 {
   .newsletter-image img {
     width: 100%;
   }
-
-  .newsletter-image, .newsletter-text {
-    align-self: center; 
-  }
-
-  .newsletter-text h2,
-  .newsletter-text p {
-    text-align: left;
-    padding: var(--space-1) 0;
-  }
-
+  
   .newsletter-form {
     text-align: left;
     justify-items: start;
