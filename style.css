@@ -70,6 +70,10 @@ h3 {
   font-size: var(--fs-6);
 }
 
+.speakers h2, .schedule h2 {
+  font-size: var(--fs-2);
+}
+
 /* Shared styles */
 .btn, .speaker-card, .schedule-item {
   cursor: pointer;
@@ -250,7 +254,7 @@ h3 {
   }
 }
 
-@media screen and (prefers-color-scheme: light) {
+@media screen and (prefers-color-scheme: dark) {
   body {
     background-color: var(--color-dark-700);
     color: var(--color-white)
@@ -274,7 +278,7 @@ h3 {
   }
 }
 
-@media screen and (prefers-color-scheme: dark) {
+@media screen and (prefers-color-scheme: light) {
   body {
     background-color: var(--color-light);
   }
