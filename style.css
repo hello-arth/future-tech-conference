@@ -169,6 +169,7 @@ body {
 
 .form-group input {
   background-color: var(--color-card-background);
+  color: var(--color-foreground);
   border: 1px solid #888888;
   border-radius: .5rem;
   font-size: 1rem;
@@ -240,8 +241,5 @@ body {
     --color-foreground: var(--color-white);
     --color-card-background: var(--color-black);
   }
-
-  .form-group input {
-    color: var(--color-white)
-  }
 }
+
