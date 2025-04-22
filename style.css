@@ -230,10 +230,6 @@ body {
   .newsletter {
     padding: 4rem 8rem;
   }
-
-  .form-group input {
-    color: var(--color-white)
-  }
 }
 
 /* Color Scheme */
@@ -243,5 +239,9 @@ body {
     --color-background: var(--color-dark);
     --color-foreground: var(--color-white);
     --color-card-background: var(--color-black);
+  }
+
+  .form-group input {
+    color: var(--color-white)
   }
 }
