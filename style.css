@@ -27,11 +27,11 @@ body {
 /* Shared Styles */
 .btn, .speaker-card, .schedule-item {
   cursor: pointer;
-  transition: .25s ease;
+  transition: .1s ease;
 }
 
 .btn:hover, .speaker-card:hover, .schedule-item:hover {
-  transform: scale(1.02) translateY(-.1rem)
+  transform: translateY(-.1rem)
 }
 
 .btn:hover {
@@ -216,7 +216,6 @@ body {
     font-size: 3rem;
   }
   
-
   .speakers-grid {
     grid-template-columns: repeat(3, 1fr);
   }
@@ -239,7 +238,7 @@ body {
   .speakers,
   .schedule,
   .newsletter {
-    padding: 4rem 8rem;
+    padding: 3rem 8rem;
   }
 }
 
