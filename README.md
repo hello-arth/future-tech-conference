@@ -13,11 +13,11 @@ Uma landing page para o evento Future Tech Conference 2025, com foco em Intelig�
 
 #### 1. Clone o repositório:
 ```bash
-git clone git@github.com:hello-arth/responsive-landing-page.git
+git clone git@github.com:hello-arth/future-tech-conference.git
 ```
 #### 2. Navegue até a pasta do projeto:
 ```bash
-cd responsive-landing-page
+cd future-tech-conference
 ```
 
 3. Abra o arquivo `index.html` em seu navegador para visualizar a página.
