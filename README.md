@@ -3,11 +3,11 @@
 Uma landing page para o evento Future Tech Conference 2025, com foco em Inteligência Artificial, Computação em Nuvem e Desenvolvimento Web. Desenvolvida com HTML e CSS, possui layout responsivo para dispositivos móveis.
 
 ## Notas
-- Sessão de herói com chamada para ação  
+- Sessão "hero" com chamada para ação  
 - Seção de palestrantes com imagens e descrições  
 - Grade de programação do evento  
-- Formulário de inscrição em newsletter  
-- Responsividade básica implementada para melhor visualização em dispositivos móveis  
+- Formulário de inscrição em newsletter
+- Responsividade básica implementada para melhor visualização em dispositivos móveis
 
 ## Como rodar o projeto
 
