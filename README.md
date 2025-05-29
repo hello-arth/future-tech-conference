@@ -1,4 +1,4 @@
-# Future Tech Conference 2025
+# 📦 Future Tech Conference 2025
 
 Uma landing page responsiva para o evento fictício "Future Tech Conference 2025", com foco em Inteligência Artificial, Computação em Nuvem e Desenvolvimento Web. Desenvolvida com HTML e CSS, possui layout responsivo para dispositivos móveis.
 
@@ -9,7 +9,7 @@ Uma landing page responsiva para o evento fictício "Future Tech Conference 2025
 - Formulário de inscrição em newsletter
 - Responsividade básica implementada para melhor visualização em dispositivos móveis
 
-## Como rodar o projeto
+## 🚀 Como rodar o projeto
 
 #### 1. Clone o repositório:
 ```bash
@@ -20,9 +20,9 @@ git clone git@github.com:hello-arth/future-tech-conference.git
 cd future-tech-conference
 ```
 
-3. Abra o arquivo `index.html` em seu navegador para visualizar a página.
+#### 3. Abra o arquivo `index.html` em seu navegador para visualizar a página.
 
-## Stack utilizada
+## 🧰 Stack utiliza
 
 - HTML  
 - CSS
